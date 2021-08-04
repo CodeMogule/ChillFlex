@@ -1,0 +1,211 @@
+header {
+  background-color: #181818;
+}
+
+header .hamburger {
+  padding: 30px;
+}
+
+header .close {
+  position: absolute;
+  right: 10%;
+}
+
+header .logo {
+  width: 6rem;
+}
+
+header .nav {
+  background-color: #121212 !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  left: -100%;
+  top: -1%;
+}
+
+header .nav .nav-item {
+  margin: 5px;
+  font-size: 130%;
+  transform: translateY(150%);
+  -webkit-transform: translateY(150%);
+  -moz-transform: translateY(150%);
+  -ms-transform: translateY(150%);
+  -o-transform: translateY(150%);
+}
+
+header .nav .nav-item .nav-link {
+  color: #fff;
+}
+
+header .search-btn {
+  position: absolute;
+  right: 10%;
+  top: 6%;
+  z-index: 1;
+  border: transparent;
+  background: transparent;
+}
+
+header .search-btn .search-icon {
+  color: #fff;
+}
+
+header .search-movie-suggestions .movie-sugg {
+  padding: 30px;
+  background-color: #121212 !important;
+  width: 75%;
+  position: absolute;
+  left: 11%;
+  bottom: 13%;
+  display: none;
+}
+
+header .search-movie-suggestions .movie-sugg a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+header .search-movie-suggestions .movie-sugg a .movie-poster-sugg {
+  width: 18%;
+  margin-right: 2rem;
+  float: left;
+}
+
+header .search-movie-suggestions .movie-sugg a p:last-child {
+  margin-top: -15px;
+}
+
+#hero-trending .trending-movies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+#hero-trending .trending-movies .trending-movie-lists {
+  position: relative;
+  margin: 10px;
+}
+
+#hero-trending .trending-movies .trending-movie-lists img {
+  width: auto;
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#hero-trending .trending-movies .trending-movie-lists h5 {
+  font-size: 90%;
+}
+
+#hero-trending .trending-movies .trending-movie-lists .rating .star {
+  position: absolute;
+  top: 12.7rem;
+}
+
+#hero-trending .trending-movies .trending-movie-lists .rating p {
+  font-size: 80%;
+  transform: translateX(10%);
+  -webkit-transform: translateX(10%);
+  -moz-transform: translateX(10%);
+  -ms-transform: translateX(10%);
+  -o-transform: translateX(10%);
+}
+
+#popular-movies .popular-now h1 {
+  padding: 30px;
+  font-weight: bold;
+}
+
+#popular-movies .popular-movies {
+  display: -ms-grid;
+  display: grid;
+  list-style: none;
+  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+}
+
+#popular-movies .popular-movies a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#popular-movies .popular-movies li:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+#popular-movies .popular-movies li {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#popular-movies .popular-movies li img {
+  width: 75%;
+}
+
+#popular-movies .popular-movies li h6 {
+  font-size: 70%;
+}
+
+#popular-movies .popular-movies li p {
+  font-size: 60%;
+}
+
+#popular-movies .showmore-container {
+  text-align: center;
+}
+
+#popular-movies .showmore {
+  transition: 0.4s;
+  background-color: #0CECDD;
+  color: #fff;
+  border: transparent;
+  padding: 4px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#popular-movies .showmore:hover {
+  opacity: 0.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=style.css.map */

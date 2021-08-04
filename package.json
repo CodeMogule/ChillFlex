@@ -1,0 +1,28 @@
+{
+  "name": "chillflex",
+  "version": "1.0.0",
+  "description": "Movie App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start:dev": "webpack serve --mode development --open"
+  },
+  "author": "TheAzizMoh",
+  "license": "ISC",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.9",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "loader": "^2.1.1",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

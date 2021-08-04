@@ -1,0 +1,37 @@
+#hero-trending{
+  .trending-movies{
+      display: flex;
+      list-style: none;
+      .trending-movie-lists{
+          position: relative;
+          margin: 10px;
+          img{
+              width: auto;
+              height: 200px;
+              width: 300px;
+              border-radius: 10px;
+              -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              -ms-border-radius: 10px;
+              -o-border-radius: 10px;
+}
+h5{
+    font-size: 90%;
+}
+        .rating{
+            .star{
+                position: absolute;
+                top: 12.7rem;
+            }
+           p{
+               font-size: 80%;
+               transform: translateX(10%);
+               -webkit-transform: translateX(10%);
+               -moz-transform: translateX(10%);
+               -ms-transform: translateX(10%);
+               -o-transform: translateX(10%);
+}
+        }
+      }
+  }
+}

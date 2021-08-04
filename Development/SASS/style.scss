@@ -1,0 +1,18 @@
+@import './header';
+@import './trendingmovies';
+@import './popularmovies';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: #121212;
+    color: #fff;
+ font-family: 'Lato', sans-serif;
+ font-weight: 300;
+ font-size: 18px;
+ overflow-x: hidden;
+}
