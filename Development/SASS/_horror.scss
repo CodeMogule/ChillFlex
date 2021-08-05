@@ -1,11 +1,11 @@
-#action{
-    .action-genre{
+#horror{
+    .horror-genre{
         h1{
          @include h1Section;
         }
     }
 
-    .action-movies{
+    .horror-movies{
         @include sectionMode;
         a{
            @include anchor;

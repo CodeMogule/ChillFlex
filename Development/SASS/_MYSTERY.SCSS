@@ -1,11 +1,11 @@
-#action{
-    .action-genre{
+#mystery{
+    .mystery-genre{
         h1{
          @include h1Section;
         }
     }
 
-    .action-movies{
+    .mystery-movies{
         @include sectionMode;
         a{
            @include anchor;

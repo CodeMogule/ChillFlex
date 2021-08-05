@@ -4,6 +4,7 @@ header {
 
 header .hamburger {
   padding: 30px;
+  cursor: pointer;
 }
 
 header .close {
@@ -16,6 +17,7 @@ header .logo {
 }
 
 header .nav {
+  transition: 0.5s;
   background-color: #121212 !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -23,9 +25,14 @@ header .nav {
           flex-direction: column;
   position: absolute;
   height: 100vh;
-  width: 50vw;
+  width: 55vw;
   left: -100%;
   top: -1%;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 header .nav .nav-item {
@@ -40,6 +47,32 @@ header .nav .nav-item {
 
 header .nav .nav-item .nav-link {
   color: #fff;
+}
+
+header .search-mobile {
+  position: absolute;
+  top: 2.1rem;
+  right: -200%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+header .search-mobile .search-box {
+  width: 18rem;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+header .search-mobile .close-search {
+  position: absolute;
+  left: -10%;
+  top: 0.1rem;
 }
 
 header .search-btn {
@@ -122,7 +155,7 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   -o-transform: translateX(10%);
 }
 
-#popular-movies .popular-now h1 h1 {
+#popular-movies .popular-now h1 {
   padding: 30px;
   font-weight: bold;
 }
@@ -193,11 +226,513 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   opacity: 0.5;
 }
 
+#action .action-genre h1 {
+  padding: 30px;
+  font-weight: bold;
+}
+
+#action .action-movies {
+  display: -ms-grid;
+  display: grid;
+  list-style: none;
+  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+}
+
+#action .action-movies a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#action .action-movies li:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+#action .action-movies li {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#action .action-movies li img {
+  width: 75%;
+}
+
+#action .action-movies li h6 {
+  font-size: 70%;
+}
+
+#action .action-movies li p {
+  font-size: 60%;
+}
+
+#action .showmore-container {
+  text-align: center;
+}
+
+#action .showmore {
+  transition: 0.4s;
+  background-color: #0CECDD;
+  color: #fff;
+  border: transparent;
+  padding: 4px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#action .showmore:hover {
+  opacity: 0.5;
+}
+
+#adventure .adventure-genre h1 {
+  padding: 30px;
+  font-weight: bold;
+}
+
+#adventure .adventure-movies {
+  display: -ms-grid;
+  display: grid;
+  list-style: none;
+  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+}
+
+#adventure .adventure-movies a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#adventure .adventure-movies li:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+#adventure .adventure-movies li {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#adventure .adventure-movies li img {
+  width: 75%;
+}
+
+#adventure .adventure-movies li h6 {
+  font-size: 70%;
+}
+
+#adventure .adventure-movies li p {
+  font-size: 60%;
+}
+
+#adventure .showmore-container {
+  text-align: center;
+}
+
+#adventure .showmore {
+  transition: 0.4s;
+  background-color: #0CECDD;
+  color: #fff;
+  border: transparent;
+  padding: 4px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#adventure .showmore:hover {
+  opacity: 0.5;
+}
+
+#animation .animation-genre h1 {
+  padding: 30px;
+  font-weight: bold;
+}
+
+#animation .animation-movies {
+  display: -ms-grid;
+  display: grid;
+  list-style: none;
+  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+}
+
+#animation .animation-movies a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#animation .animation-movies li:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+#animation .animation-movies li {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#animation .animation-movies li img {
+  width: 75%;
+}
+
+#animation .animation-movies li h6 {
+  font-size: 70%;
+}
+
+#animation .animation-movies li p {
+  font-size: 60%;
+}
+
+#animation .showmore-container {
+  text-align: center;
+}
+
+#animation .showmore {
+  transition: 0.4s;
+  background-color: #0CECDD;
+  color: #fff;
+  border: transparent;
+  padding: 4px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#animation .showmore:hover {
+  opacity: 0.5;
+}
+
+#crime .crime-genre h1 {
+  padding: 30px;
+  font-weight: bold;
+}
+
+#crime .crime-movies {
+  display: -ms-grid;
+  display: grid;
+  list-style: none;
+  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+}
+
+#crime .crime-movies a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#crime .crime-movies li:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+#crime .crime-movies li {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#crime .crime-movies li img {
+  width: 75%;
+}
+
+#crime .crime-movies li h6 {
+  font-size: 70%;
+}
+
+#crime .crime-movies li p {
+  font-size: 60%;
+}
+
+#crime .showmore-container {
+  text-align: center;
+}
+
+#crime .showmore {
+  transition: 0.4s;
+  background-color: #0CECDD;
+  color: #fff;
+  border: transparent;
+  padding: 4px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#crime .showmore:hover {
+  opacity: 0.5;
+}
+
+#horror .horror-genre h1 {
+  padding: 30px;
+  font-weight: bold;
+}
+
+#horror .horror-movies {
+  display: -ms-grid;
+  display: grid;
+  list-style: none;
+  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+}
+
+#horror .horror-movies a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#horror .horror-movies li:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+#horror .horror-movies li {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#horror .horror-movies li img {
+  width: 75%;
+}
+
+#horror .horror-movies li h6 {
+  font-size: 70%;
+}
+
+#horror .horror-movies li p {
+  font-size: 60%;
+}
+
+#horror .showmore-container {
+  text-align: center;
+}
+
+#horror .showmore {
+  transition: 0.4s;
+  background-color: #0CECDD;
+  color: #fff;
+  border: transparent;
+  padding: 4px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#horror .showmore:hover {
+  opacity: 0.5;
+}
+
+#mystery .mystery-genre h1 {
+  padding: 30px;
+  font-weight: bold;
+}
+
+#mystery .mystery-movies {
+  display: -ms-grid;
+  display: grid;
+  list-style: none;
+  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+}
+
+#mystery .mystery-movies a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#mystery .mystery-movies li:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+#mystery .mystery-movies li {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#mystery .mystery-movies li img {
+  width: 75%;
+}
+
+#mystery .mystery-movies li h6 {
+  font-size: 70%;
+}
+
+#mystery .mystery-movies li p {
+  font-size: 60%;
+}
+
+#mystery .showmore-container {
+  text-align: center;
+}
+
+#mystery .showmore {
+  transition: 0.4s;
+  background-color: #0CECDD;
+  color: #fff;
+  border: transparent;
+  padding: 4px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#mystery .showmore:hover {
+  opacity: 0.5;
+}
+
+#watchlists .watchlist-ting h1 {
+  padding: 30px;
+  font-weight: bold;
+}
+
+#watchlists .My-WatchLists {
+  display: -ms-grid;
+  display: grid;
+  list-style: none;
+  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+}
+
+#watchlists .My-WatchLists a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#watchlists .My-WatchLists li:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+#watchlists .My-WatchLists li {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#watchlists .My-WatchLists li img {
+  width: 75%;
+}
+
+#watchlists .My-WatchLists li h6 {
+  font-size: 70%;
+}
+
+#watchlists .My-WatchLists li p {
+  font-size: 60%;
+}
+
+#watchlists .showmore-container {
+  text-align: center;
+}
+
+#watchlists .showmore {
+  transition: 0.4s;
+  background-color: #0CECDD;
+  color: #fff;
+  border: transparent;
+  padding: 4px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#watchlists .showmore:hover {
+  opacity: 0.5;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.minimize {
+  overflow: hidden;
+  height: 100vh;
 }
 
 html, body {

@@ -1,11 +1,11 @@
-#action{
-    .action-genre{
+#watchlists{
+    .watchlist-ting{
         h1{
          @include h1Section;
         }
     }
 
-    .action-movies{
+    .My-WatchLists{
         @include sectionMode;
         a{
            @include anchor;

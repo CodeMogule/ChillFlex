@@ -1,11 +1,23 @@
 @import './header';
 @import './trendingmovies';
 @import './popularmovies';
+@import './action';
+@import './adventure';
+@import './animation';
+@import './crime';
+@import './horror';
+@import './_MYSTERY.SCSS';
+@import './watchlists';
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.minimize{
+    overflow: hidden;
+    height: 100vh;
 }
 
 html,body{

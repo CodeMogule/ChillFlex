@@ -1,11 +1,11 @@
-#action{
-    .action-genre{
+#adventure{
+    .adventure-genre{
         h1{
          @include h1Section;
         }
     }
 
-    .action-movies{
+    .adventure-movies{
         @include sectionMode;
         a{
            @include anchor;

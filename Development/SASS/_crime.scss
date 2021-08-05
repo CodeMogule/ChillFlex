@@ -1,11 +1,11 @@
-#action{
-    .action-genre{
+#crime{
+    .crime-genre{
         h1{
          @include h1Section;
         }
     }
 
-    .action-movies{
+    .crime-movies{
         @include sectionMode;
         a{
            @include anchor;
