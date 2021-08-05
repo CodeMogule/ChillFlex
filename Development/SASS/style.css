@@ -122,7 +122,7 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   -o-transform: translateX(10%);
 }
 
-#popular-movies .popular-now h1 {
+#popular-movies .popular-now h1 h1 {
   padding: 30px;
   font-weight: bold;
 }

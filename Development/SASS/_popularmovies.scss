@@ -1,67 +1,43 @@
+@import './config';
+
 #popular-movies{
     .popular-now{
         h1{
-            padding: 30px;
-            font-weight: bold;
+         @include h1Section;
         }
     }
 
     .popular-movies{
-        display: grid;
-        list-style: none;
-        grid-template-columns: repeat(auto-fill,minmax(31.66%,1fr));
+        @include sectionMode;
         a{
-            text-decoration: none;
-            color: #fff
-        
+           @include anchor;
         }
         li:hover{
-           transform: translateY(-10px);
-           -webkit-transform: translateY(-10px);
-           -moz-transform: translateY(-10px);
-           -ms-transform: translateY(-10px);
-           -o-transform: translateY(-10px);
-}
+            @include listHover;
+        }
        
         li{
-            transition: 0.4s;
-            -webkit-transition: 0.4s;
-            -moz-transition: 0.4s;
-            -ms-transition: 0.4s;
-            -o-transition: 0.4s;
+           @include listStyle;
         img{
-                width: 75%;
+               @include imgSize;
             }
 
             h6{
-                font-size: 70%;
+               @include h6;
             }
 
             p{
-                font-size: 60%;
+              @include p;
             }
         }
 
        
     }
     .showmore-container{
-        text-align: center;
+        @include showMoreContainer;
     }
     .showmore{
-        transition: 0.4s;
-        background-color: #0CECDD;
-        color: #fff;
-        border: transparent;
-        padding: 4px;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        -webkit-transition: 0.4s;
-        -moz-transition: 0.4s;
-        -ms-transition: 0.4s;
-        -o-transition: 0.4s;
+       @include showMore;
 &:hover{
             opacity: 0.5;
         }
