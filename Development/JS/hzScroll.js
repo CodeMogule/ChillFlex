@@ -1,6 +1,6 @@
 export function scrollRight(){
   $(document).on('swipeleft',function(event){
-      $('.trending-movies').animate({scrollLeft:'+=250'},800)
+      $('.trending-movies').animate({scrollLeft:'+=400'},800)
   })
 }
 

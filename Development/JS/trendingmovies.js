@@ -6,7 +6,6 @@ export function getTrendingMovies(){
     }).done(function(data){
        let trendData = data.results
        $.each(trendData,function(index,movies){
-           console.log(movies)
            const blockPath = `https://image.tmdb.org/t/p/w500`
            const markup = `
            <li class="trending-movie-lists">
