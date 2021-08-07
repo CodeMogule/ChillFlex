@@ -1,3 +1,10 @@
+.ui-textinput-clear-button{
+display: none;
+}
+.ui-loader-header{
+    display: none;
+}
+
 header{
 background-color: #181818;
     .hamburger{
@@ -44,17 +51,18 @@ background-color: #181818;
         }
     }
 
+    #search-form{
+        position: absolute;
+       right: -200%;
+        bottom: 90%;
+    }
+
     .search-mobile{
-      position: absolute;
-      top: 2.1rem;
-      right: -200%;
-      transition: 0.4s;
-      -webkit-transition: 0.4s;
-      -moz-transition: 0.4s;
-      -ms-transition: 0.4s;
-      -o-transition: 0.4s;
+      width: 100vw;
+     padding-right: 7rem;
       .search-box{
-            width: 18rem;
+            width:100%;
+            margin-left: 1rem;
             border-radius: 3px;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
@@ -65,6 +73,8 @@ background-color: #181818;
             position: absolute;
             left: -10%;
             top: 0.1rem;
+            font-size: 90%;
+            margin-left: 1rem;
         }
     }
 

@@ -1,3 +1,11 @@
+.ui-textinput-clear-button {
+  display: none;
+}
+
+.ui-loader-header {
+  display: none;
+}
+
 header {
   background-color: #181818;
 }
@@ -49,19 +57,20 @@ header .nav .nav-item .nav-link {
   color: #fff;
 }
 
-header .search-mobile {
+header #search-form {
   position: absolute;
-  top: 2.1rem;
   right: -200%;
-  transition: 0.4s;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
+  bottom: 90%;
+}
+
+header .search-mobile {
+  width: 100vw;
+  padding-right: 7rem;
 }
 
 header .search-mobile .search-box {
-  width: 18rem;
+  width: 100%;
+  margin-left: 1rem;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -73,6 +82,8 @@ header .search-mobile .close-search {
   position: absolute;
   left: -10%;
   top: 0.1rem;
+  font-size: 90%;
+  margin-left: 1rem;
 }
 
 header .search-btn {
@@ -119,6 +130,7 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  overflow-x: hidden;
 }
 
 #hero-trending .trending-movies .trending-movie-lists {
@@ -127,6 +139,10 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
 }
 
 #hero-trending .trending-movies .trending-movie-lists img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   width: auto;
   height: 200px;
   width: 300px;

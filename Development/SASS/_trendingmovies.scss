@@ -2,10 +2,15 @@
   .trending-movies{
       display: flex;
       list-style: none;
+      overflow-x: hidden;
+
+      
+
       .trending-movie-lists{
           position: relative;
           margin: 10px;
           img{
+              user-select: none;
               width: auto;
               height: 200px;
               width: 300px;
