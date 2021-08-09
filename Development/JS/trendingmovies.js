@@ -1,3 +1,5 @@
+import {getMovieDetails} from './getDetails'
+
 export function getTrendingMovies(){
     $.ajax({
         method: "GET",
@@ -9,15 +11,18 @@ export function getTrendingMovies(){
            const blockPath = `https://image.tmdb.org/t/p/w500`
            const markup = `
            <li class="trending-movie-lists">
+           <a href = "#" draggable="false" onclick = "getId(${movies.id})">
            <img src="${blockPath}${movies.backdrop_path}" alt="" draggable="false"> 
            <h5>${movies.title}</h5>
             <div class="rating">
                 <p>${movies.vote_average}</p>
                 <i class="fas fa-star star"></i>
             </div>
+            </a>
         </li>
            `
            $(markup).appendTo('.trending-movies')
        })
     })
+    getMovieDetails()
 }

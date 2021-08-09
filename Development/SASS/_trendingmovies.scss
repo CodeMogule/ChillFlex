@@ -7,6 +7,11 @@
       
 
       .trending-movie-lists{
+        user-select: none;
+          a{
+              text-decoration: none;
+              color: #fff;
+          }
           position: relative;
           margin: 10px;
           img{

@@ -4,7 +4,7 @@ import * as scrollTrending from './hzScroll';
 import {getTrendingMovies} from './trendingmovies';
 import {getPopularMovies} from './getpopularmovies';
 import {nothing} from './getMoviesGenre';
-
+import {getDetails} from './getDetails';
 //mobile menu
 mobileMenu.openMenu();
 mobileMenu.closeMenu();
@@ -58,15 +58,9 @@ getGenre('showmore-mystery',9648)
 
 
 
-
-
-
-
-
-
 $.ajax({
     method: "GET",
-    url: `https://api.themoviedb.org/3/genre/movie/list?api_key=cc65c8449d31408a45621d9ff608f031&language=en-US`,
+    url: ``,
     dataType: `JSON`
 }).done(function(data){
     console.log(data)

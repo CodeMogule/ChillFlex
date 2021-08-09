@@ -1,4 +1,5 @@
 export function popUpSearch(){
+    try{
     $('.search-btn').click(function(event){
         event.preventDefault()
         $('#search-form').css('right','-15%')
@@ -6,9 +7,13 @@ export function popUpSearch(){
         $('.logo').css('visibility','hidden')
         $('.search-btn').css('visibility','hidden')
     })
+}catch(error){
+
+}
 }
 
 export function closeMobileSearch(){
+    try{
     $('.close-search').click(function(event){
         event.preventDefault()
         $('#search-form').css('right','-200%')
@@ -16,4 +21,7 @@ export function closeMobileSearch(){
         $('.logo').css('visibility','visible')
         $('.search-btn').css('visibility','visible')
     })
+}catch(error){
+
+}
 }

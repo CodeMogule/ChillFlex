@@ -134,8 +134,17 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
 }
 
 #hero-trending .trending-movies .trending-movie-lists {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: relative;
   margin: 10px;
+}
+
+#hero-trending .trending-movies .trending-movie-lists a {
+  text-decoration: none;
+  color: #fff;
 }
 
 #hero-trending .trending-movies .trending-movie-lists img {

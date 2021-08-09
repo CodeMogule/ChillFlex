@@ -1,3 +1,5 @@
+import {getMovieDetails} from './getDetails'
+
 window.getMoviesGenre = function(genreNum,pageNum){
     $.ajax({
         method:"GET",
@@ -15,7 +17,7 @@ window.getMoviesGenre = function(genreNum,pageNum){
             const url = `https://image.tmdb.org/t/p/w500`
             const markup = `
             <li>
-            <a href="${getGenre.id}">
+            <a href="#" onclick = "getId(${getGenre.id})">
          <img src="${url}${getGenre.poster_path}" class="popluar-poster">
          <h6>${getGenre.title}</h6>
          <p>${getYearOnly}</p>
@@ -26,4 +28,4 @@ window.getMoviesGenre = function(genreNum,pageNum){
         })
     })
 }
-
+getMovieDetails()

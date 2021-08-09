@@ -1,11 +1,19 @@
 export function scrollRight(){
-  $(document).on('swipeleft',function(event){
+  try{
+  $('#hero-trending').on('swipeleft',function(event){
       $('.trending-movies').animate({scrollLeft:'+=400'},800)
   })
+}catch(error){
+
+}
 }
 
 export function scrollLeft(){
-    $(document).on('swiperight',function(event){
+  try{
+    $('#hero-trending').on('swiperight',function(event){
         $('.trending-movies').animate({scrollLeft:'-=250'},800)
     })
+  }catch(error){
+    
+  }
   }

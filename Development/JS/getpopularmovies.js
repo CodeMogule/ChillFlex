@@ -15,7 +15,7 @@ export function getPopularMovies(pageCounter){
             const url = `https://image.tmdb.org/t/p/w500`
             const markup = `
             <li>
-            <a href="${movies.id}">
+            <a href="#" onclick = "getId(${movies.id})">
          <img src="${url}${movies.poster_path}" alt="" class="popluar-poster">
          <h6>${movies.title}</h6>
          <p>${getYearOnly}</p>
