@@ -1,5 +1,3 @@
-import {getMovieDetails} from './getDetails'
-
 window.getMoviesGenre = function(genreNum,pageNum){
     $.ajax({
         method:"GET",
@@ -28,4 +26,4 @@ window.getMoviesGenre = function(genreNum,pageNum){
         })
     })
 }
-getMovieDetails()
+

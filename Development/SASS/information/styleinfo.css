@@ -160,14 +160,17 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
 }
 
 html, body {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
   color: #fff;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 18px;
   overflow-x: hidden;
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 /*# sourceMappingURL=styleinfo.css.map */

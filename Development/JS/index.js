@@ -5,6 +5,7 @@ import {getTrendingMovies} from './trendingmovies';
 import {getPopularMovies} from './getpopularmovies';
 import {nothing} from './getMoviesGenre';
 import {getDetails} from './getDetails';
+import {getMovieDetails} from './getDetails'
 //mobile menu
 mobileMenu.openMenu();
 mobileMenu.closeMenu();
@@ -56,7 +57,7 @@ getGenre('showmore-horror',27)
 //more mystery
 getGenre('showmore-mystery',9648)
 
-
+getMovieDetails()
 
 $.ajax({
     method: "GET",

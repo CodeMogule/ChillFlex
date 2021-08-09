@@ -24,5 +24,5 @@ export function getTrendingMovies(){
            $(markup).appendTo('.trending-movies')
        })
     })
-    getMovieDetails()
+    
 }
