@@ -61,9 +61,7 @@ getMovieDetails()
 
 $.ajax({
     method: "GET",
-    url: ``,
+    //url: `https://api.themoviedb.org/3/movie/423108/videos?api_key=cc65c8449d31408a45621d9ff608f031&language=en-US`,
     dataType: `JSON`
-}).done(function(data){
-    console.log(data)
 })
 
