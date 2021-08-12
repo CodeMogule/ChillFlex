@@ -20,6 +20,7 @@ export function closeMobileSearch(){
         $('.hamburger').css('visibility','visible')
         $('.logo').css('visibility','visible')
         $('.search-btn').css('visibility','visible')
+        $('.movie-sugg').html('')
     })
 }catch(error){
 

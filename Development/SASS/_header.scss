@@ -93,21 +93,25 @@ background-color: #181818;
     .search-movie-suggestions{
         .movie-sugg{
             padding: 30px;
-            background-color: #121212 !important;
-            width: 75%;
-            position: absolute;
-            left: 11%;
-            bottom: 13%;
-            display: none;
+    background-color: #121212 !important;
+    width: 70%;
+    position: absolute;
+    left: 13%;
+    top: 15%;
+    padding-top: 5;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+        
             a{
                 text-decoration: none;
                 color: #fff;
                 font-size: 0.875rem;
-                
+                margin-top: 20px;
                 .movie-poster-sugg{
-                  width: 18%;
-                  margin-right: 2rem;
-                  float: left;
+                    width: 20%;
+                    margin-right: 2rem;
+                    float: left;
                 }
                 p:last-child{
                     margin-top: -15px;

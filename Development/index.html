@@ -34,8 +34,8 @@
             <li><a class="dropdown-item" href="mystery.html" rel="external">Mystery</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="watchlist.html" rel="external">WatchLists</a>
+        <li class="nav-item" >
+          <a class="nav-link" href="watchlist.html" rel="external" style="margin-bottom: -30px;">Popular TV Shows</a>
         </li>
       </ul>
       <button class="search-btn">
@@ -44,40 +44,20 @@
     <form id="search-form">
         <div class="search-mobile">
             <button type="button" class="btn-close btn-close-white close-search" aria-label="Close"></button>
-        <input type="search" placeholder="Search" class="search-box">
-        </div>
-       
-        <div class="search-movie-suggestions">
-            <div class="movie-sugg shadow-lg p-3 mb-5 bg-body rounded"">
-                <a href="">
-               <img src="./IMAGES/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg" alt="" class="movie-poster-sugg" draggable="false"> avengers endgame
-               <p>2019</p>
-               <p>action,adventure,idk</p>
-                </a>
-                <a href="">
-                    <img src="./IMAGES/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg" alt="" class="movie-poster-sugg"> avengers endgame
-                    <p>2019</p>
-                    <p>action,adventure,idk</p>
-                     </a>
-                     <a href="">
-                        <img src="./IMAGES/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg" alt="" class="movie-poster-sugg"> avengers endgame
-                        <p>2019</p>
-                        <p>action,adventure,idk</p>
-                         </a>
-                         <a href="">
-                            <img src="./IMAGES/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg" alt="" class="movie-poster-sugg"> avengers endgame
-                            <p>2019</p>
-                            <p>action,adventure,idk</p>
-                             </a>
-                             <a href="">
-                                <img src="./IMAGES/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg" alt="" class="movie-poster-sugg"> avengers endgame
-                                <p>2019</p>
-                                <p>action,adventure,idk</p>
-                                 </a>
-            </div>
+        <input type="search" placeholder="Search" class="search-box" onkeyup="searchDropDown()">
         </div>
     </form>
-    
+    <div class="search-movie-suggestions">
+      <div class="movie-sugg shadow-lg p-3 mb-5 bg-body rounded">
+        <!--
+          <a href="">
+         <img src="./IMAGES/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg" alt="" class="movie-poster-sugg" draggable="false"> avengers endgame
+         <p>2019</p>
+         <p>action,adventure,idk</p>
+          </a>
+        -->
+      </div>
+  </div>
    </header>
 
    <section id="hero-trending">

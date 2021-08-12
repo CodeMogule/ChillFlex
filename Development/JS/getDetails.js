@@ -10,10 +10,18 @@ export function getMovieDetails(){
         url: `https://api.themoviedb.org/3/movie/${getId}?api_key=cc65c8449d31408a45621d9ff608f031&language=en-US`,
         dataType: `JSON`
     }).done(function(data){
-        console.log(data)
         const genres = $.map(data.genres.slice(0,3),function(genre,index){
             return `<li>${genre.name}</li>`
         }).join("")
+        let text;
+        let icon;
+        if(localStorage.getItem('btn') === null){
+            text = 'ADD TO MY WATCHLISTS'
+            icon = `fas fa-list watchlist-icon`
+        }else{
+            text = JSON.parse(localStorage.getItem('btn'))
+            icon = `fas fa-check watchlist-icon`
+        }
         const url = `https://image.tmdb.org/t/p/original`
         const wholeMarkup = `
         <div class="page-wrap">
@@ -49,7 +57,7 @@ export function getMovieDetails(){
             
         </button>
         <button class="add-watchlist">
-            <i class="fas fa-list watchlist-icon"> <span>Add to WatchList</span></i>
+            <i class="${icon}" > <span> ${text}</span></i>
         </button>
     </div>
     </section>
@@ -57,9 +65,15 @@ export function getMovieDetails(){
     </div>
         
         `
-        $(wholeMarkup).appendTo('.movies-info')
-
+     $(wholeMarkup).appendTo('.movies-info')
+     $(`.add-watchlist`).click(function(id){
+        window.localStorage.setItem('list',id)
+        window.localStorage.setItem('btn',JSON.stringify('ADDED!'))
+        localStorage.removeItem('btn')
+        $('.add-watchlist i').removeClass('fa fa-list').addClass('fas fa-check').text(' ADDED!')
     })
+    })
+   
     getCasts(getId)
     getTrailer(getId)
 }
@@ -72,7 +86,6 @@ function getCasts(id){
     }).done(function(data){
         const dataCasts = data.cast
         $.each(dataCasts.splice(0,3),function(index,casts){
-            console.log(casts)
             const markup = `
             <span>${casts.name}&nbsp; </span>
             `

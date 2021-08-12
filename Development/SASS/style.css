@@ -102,21 +102,30 @@ header .search-btn .search-icon {
 header .search-movie-suggestions .movie-sugg {
   padding: 30px;
   background-color: #121212 !important;
-  width: 75%;
+  width: 70%;
   position: absolute;
-  left: 11%;
-  bottom: 13%;
-  display: none;
+  left: 13%;
+  top: 15%;
+  padding-top: 5;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 header .search-movie-suggestions .movie-sugg a {
   text-decoration: none;
   color: #fff;
   font-size: 0.875rem;
+  margin-top: 20px;
 }
 
 header .search-movie-suggestions .movie-sugg a .movie-poster-sugg {
-  width: 18%;
+  width: 20%;
   margin-right: 2rem;
   float: left;
 }
@@ -688,6 +697,7 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   list-style: none;
   -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+  padding: 6%;
 }
 
 #watchlists .My-WatchLists a {
@@ -711,6 +721,13 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   -o-transition: 0.4s;
 }
 
+#watchlists .My-WatchLists li .remove {
+  color: #ee0505;
+  font-size: 80%;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
 #watchlists .My-WatchLists li img {
   width: 75%;
 }
@@ -721,31 +738,6 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
 
 #watchlists .My-WatchLists li p {
   font-size: 60%;
-}
-
-#watchlists .showmore-container {
-  text-align: center;
-}
-
-#watchlists .showmore {
-  transition: 0.4s;
-  background-color: #0CECDD;
-  color: #fff;
-  border: transparent;
-  padding: 4px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
-}
-
-#watchlists .showmore:hover {
-  opacity: 0.5;
 }
 
 * {

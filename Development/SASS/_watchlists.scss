@@ -7,6 +7,7 @@
 
     .My-WatchLists{
         @include sectionMode;
+        padding: 6%;
         a{
            @include anchor;
         }
@@ -16,6 +17,12 @@
        
         li{
            @include listStyle;
+           .remove{
+            color: rgb(238, 5, 5);
+            font-size: 80%;
+            cursor: pointer;
+            margin-bottom:30px 
+        }
         img{
                @include imgSize;
             }
@@ -31,13 +38,4 @@
 
        
     }
-    .showmore-container{
-        @include showMoreContainer;
-    }
-    .showmore{
-       @include showMore;
-&:hover{
-            opacity: 0.5;
-        }
-}
 }

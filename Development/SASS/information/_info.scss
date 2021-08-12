@@ -17,11 +17,18 @@
     }
 
     .movie-details{
-        margin: 60px;
+        margin: 25px;
+
+        h1{
+            font-size: 150%;
+        }
+        p{
+            font-size: 70%;
+        }
     }
 
     .cta-btns{
-        margin: 60px;
+        margin: 25px;
         .play-trailer{
             &:hover{
                 opacity: 0.5;
@@ -58,7 +65,7 @@
     margin-left: 10px;
     .watchlist-icon{
         color: rgba(255, 255, 255, 0.87);
-        font-size: 100%;
+        font-size: 90%;
     }
 }
     }

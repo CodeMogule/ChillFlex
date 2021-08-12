@@ -5,7 +5,9 @@ import {getTrendingMovies} from './trendingmovies';
 import {getPopularMovies} from './getpopularmovies';
 import {nothing} from './getMoviesGenre';
 import {getDetails} from './getDetails';
-import {getMovieDetails} from './getDetails'
+import {getMovieDetails} from './getDetails';
+import {getSearch} from './search';
+
 //mobile menu
 mobileMenu.openMenu();
 mobileMenu.closeMenu();
@@ -57,11 +59,7 @@ getGenre('showmore-horror',27)
 //more mystery
 getGenre('showmore-mystery',9648)
 
+//get movie info
 getMovieDetails()
 
-$.ajax({
-    method: "GET",
-    //url: `https://api.themoviedb.org/3/movie/423108/videos?api_key=cc65c8449d31408a45621d9ff608f031&language=en-US`,
-    dataType: `JSON`
-})
-
+//https://www.youtube.com/watch?v=MBJuTkILZYo&t=728s&ab_channel=FrontendTips

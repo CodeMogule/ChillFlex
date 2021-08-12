@@ -1,4 +1,4 @@
-import {getMovieDetails} from './getDetails'
+
 
 export function getTrendingMovies(){
     $.ajax({
