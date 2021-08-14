@@ -7,6 +7,7 @@ import {nothing} from './getMoviesGenre';
 import {getDetails} from './getDetails';
 import {getMovieDetails} from './getDetails';
 import {getSearch} from './search';
+import {GetLatestMovies} from './latest';
 
 //mobile menu
 mobileMenu.openMenu();
@@ -30,8 +31,13 @@ let counter = 1
 //get popular Movies
 getPopularMovies(counter)
 $('.showmore').click(function(){
-    getPopularMovies(counter+=1)    
+    getPopularMovies(counter+=1)  
+    latestMovies.getLatest(counter+=1)  
 })
+
+//get latest Movies
+const latestMovies = new GetLatestMovies
+latestMovies.getLatest();
 
 
 //get genre movies
@@ -62,4 +68,3 @@ getGenre('showmore-mystery',9648)
 //get movie info
 getMovieDetails()
 
-//https://www.youtube.com/watch?v=MBJuTkILZYo&t=728s&ab_channel=FrontendTips

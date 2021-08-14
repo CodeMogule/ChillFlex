@@ -57,6 +57,12 @@ background-color: #181818;
         bottom: 90%;
     }
 
+    #in-search{
+        position: absolute;
+        right: -200%;
+         bottom: 90%;
+    }
+
     .search-mobile{
       width: 100vw;
      padding-right: 7rem;
@@ -91,6 +97,35 @@ background-color: #181818;
     }
 
     .search-movie-suggestions{
+        .movie-sugg-genre{
+             padding: 30px;
+    background-color: #121212 !important;
+    width: 70%;
+    position: absolute;
+    left: 5%;
+    top: 4rem;
+    padding-top: 5;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+        display: none;
+        
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.875rem;
+            margin-bottom: 20px;
+            .movie-poster-sugg{
+                width: 20%;
+                margin-right: 2rem;
+                float: left;
+            }
+            p:last-child{
+                margin-top: -15px;
+            }
+        }
+        }
         .movie-sugg{
             padding: 30px;
     background-color: #121212 !important;
@@ -102,7 +137,7 @@ background-color: #181818;
     z-index: 1;
     display: flex;
     flex-direction: column;
-        
+        display: none;
             a{
                 text-decoration: none;
                 color: #fff;

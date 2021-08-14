@@ -33,7 +33,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="watchlist.html">WatchLists</a>
+              <a class="nav-link" href="latest.html">Latest</a>
             </li>
           </ul>
           <button class="search-btn">
@@ -42,36 +42,12 @@
           <form id="search-form">
             <div class="search-mobile">
                 <button type="button" class="btn-close btn-close-white close-search" aria-label="Close"></button>
-            <input type="search" placeholder="Search" class="search-box">
+            <input type="search" placeholder="Search" class="search-box" onkeyup="searchDropDown()">
             </div>
            
             <div class="search-movie-suggestions">
-                <div class="movie-sugg shadow-lg p-3 mb-5 bg-body rounded"">
-                    <a href="">
-                   <img src="./IMAGES/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg" alt="" class="movie-poster-sugg"> avengers endgame
-                   <p>2019</p>
-                   <p>action,adventure,idk</p>
-                    </a>
-                    <a href="">
-                        <img src="./IMAGES/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg" alt="" class="movie-poster-sugg"> avengers endgame
-                        <p>2019</p>
-                        <p>action,adventure,idk</p>
-                         </a>
-                         <a href="">
-                            <img src="./IMAGES/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg" alt="" class="movie-poster-sugg"> avengers endgame
-                            <p>2019</p>
-                            <p>action,adventure,idk</p>
-                             </a>
-                             <a href="">
-                                <img src="./IMAGES/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg" alt="" class="movie-poster-sugg"> avengers endgame
-                                <p>2019</p>
-                                <p>action,adventure,idk</p>
-                                 </a>
-                                 <a href="">
-                                    <img src="./IMAGES/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg" alt="" class="movie-poster-sugg"> avengers endgame
-                                    <p>2019</p>
-                                    <p>action,adventure,idk</p>
-                                     </a>
+                <div class=" movie-sugg-genre shadow-lg p-3 mb-5 bg-body rounded">
+                   
                 </div>
             </div>
         </form>

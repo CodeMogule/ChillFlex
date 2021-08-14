@@ -1,11 +1,13 @@
-#watchlists{
-    .watchlist-ting{
+@import './config';
+
+#latest{
+    .latest-ting{
         h1{
          @include h1Section;
         }
     }
 
-    .My-WatchLists{
+    .latest-movies{
         @include sectionMode;
         padding: 6%;
         a{
@@ -38,4 +40,14 @@
 
        
     }
+
+    .showmore-container{
+        @include showMoreContainer;
+    }
+    .showmore{
+       @include showMore;
+&:hover{
+            opacity: 0.5;
+        }
+}
 }
