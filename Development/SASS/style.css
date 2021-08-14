@@ -740,6 +740,53 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   font-size: 60%;
 }
 
+#search-result h1 {
+  padding: 30px;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+#search-result .movie-results {
+  display: -ms-grid;
+  display: grid;
+  list-style: none;
+  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+}
+
+#search-result .movie-results a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#search-result .movie-results li:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+#search-result .movie-results li {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#search-result .movie-results li img {
+  width: 75%;
+}
+
+#search-result .movie-results li h6 {
+  font-size: 70%;
+}
+
+#search-result .movie-results li p {
+  font-size: 60%;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -1,0 +1,33 @@
+@import './config';
+
+#search-result{
+    h1{
+        @include h1Section;
+        font-size: 110%;
+       }
+    .movie-results{
+        @include sectionMode;
+        a{
+           @include anchor;
+        }
+        li:hover{
+            @include listHover;
+        }
+       
+        li{
+           @include listStyle;
+        img{
+               @include imgSize;
+            }
+
+            h6{
+               @include h6;
+            }
+
+            p{
+              @include p;
+            }
+        }
+
+    }
+}
