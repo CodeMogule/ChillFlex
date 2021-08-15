@@ -1,6 +1,5 @@
 //h1 for section 
 @mixin h1Section {
-    
         padding: 30px;
         font-weight: bold;
     
@@ -10,7 +9,14 @@
 @mixin sectionMode {
     display: grid;
         list-style: none;
-        grid-template-columns: repeat(auto-fill,minmax(31.66%,1fr));
+        grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+
+        @media only screen and (min-width:600px) and (max-width:993px) {
+            grid-template-columns: repeat(auto-fill,minmax(30%,1fr));
+        }
+        @media only screen and (min-width:993px) {
+            grid-template-columns: repeat(auto-fill,minmax(20%,1fr));
+        }
 }
 
 //anchor
@@ -46,11 +52,23 @@
 //h6
 @mixin h6 {
     font-size: 70%;
+    @media only screen and (min-width:600px) and (max-width:993px) {
+        font-size: 100%;
+    }
+    @media only screen and (min-width:993px) {
+        font-size: 130%;
+    }
 }
 
 //p
 @mixin p {
     font-size: 60%;
+    @media only screen and (min-width:600px) and (max-width:993px) {
+        font-size: 80%;
+    }
+    @media only screen and (min-width:993px){
+        font-size: 100%;
+    }
 }
 
 //showmore container

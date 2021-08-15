@@ -24,8 +24,6 @@ export function closeMobileSearch(){
         $('.search-btn').css('visibility','visible')
         $('.movie-sugg').html('')
         $('.movie-sugg').css('display','none')
-        $('.movie-sugg-genre').html('')
-        $('.movie-sugg-genre').css('display','none')
     })
 }catch(error){
 

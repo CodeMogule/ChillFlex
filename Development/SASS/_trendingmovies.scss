@@ -4,7 +4,6 @@
       list-style: none;
       overflow-x: hidden;
 
-      
 
       .trending-movie-lists{
         user-select: none;
@@ -44,4 +43,36 @@ h5{
         }
       }
   }
+}
+
+@media only screen and (min-width:600px) and (max-width:993px){
+    .trending-movie-lists{
+        img{
+          width: 450px !important;
+        }
+    }
+}
+
+@media only screen and (min-width:993px){
+    .trending-movie-lists{
+        .rating{
+            
+            .star{
+              position: relative !important;
+              top: -2.5rem !important;
+            }
+           p{
+               font-size: 80%;
+               transform: translateX(5%) !important;
+               -webkit-transform: translateX(5%) !important;
+               -moz-transform: translateX(5%) !important;
+               -ms-transform: translateX(5%) !important;
+               -o-transform: translateX(5%) !important;
+}
+        }
+        img{
+          width: 600px !important;
+          height: 250px !important;
+        }
+    }
 }

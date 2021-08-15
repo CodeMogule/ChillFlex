@@ -6,10 +6,6 @@
   display: none;
 }
 
-header {
-  background-color: #181818;
-}
-
 header .hamburger {
   padding: 30px;
   cursor: pointer;
@@ -24,9 +20,12 @@ header .logo {
   width: 6rem;
 }
 
+header .bg-body {
+  background-color: #121212 !important;
+}
+
 header .nav {
   transition: 0.5s;
-  background-color: #121212 !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -67,6 +66,12 @@ header #in-search {
   position: absolute;
   right: -200%;
   bottom: 90%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  header .search-box {
+    width: 70vw !important;
+  }
 }
 
 header .search-mobile {
@@ -177,6 +182,94 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   margin-top: -15px;
 }
 
+@media only screen and (min-width: 993px) {
+  header {
+    height: 20vh !important;
+  }
+  header .hamburger {
+    display: none;
+  }
+  header .close {
+    display: none;
+  }
+  header .logo {
+    width: 7rem !important;
+    margin-left: 50px;
+  }
+  header .nav-tabs {
+    border: none;
+  }
+  header .shadow {
+    -webkit-box-shadow: unset !important;
+            box-shadow: unset !important;
+  }
+  header .nav {
+    margin-bottom: 200%;
+    text-align: center;
+    transition: 0.5s;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    position: relative !important;
+    height: 0% !important;
+    width: 100% !important;
+    left: 33% !important;
+    top: -4rem !important;
+    z-index: 1;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+  header .nav .nav-item {
+    margin: 5px;
+    font-size: 130%;
+    transform: translateY(0%) !important;
+    -webkit-transform: translateY(0%) !important;
+    -moz-transform: translateY(0%) !important;
+    -ms-transform: translateY(0%) !important;
+    -o-transform: translateY(0%) !important;
+  }
+  header .nav .nav-item .nav-link {
+    color: #fff;
+  }
+  header #search-form {
+    position: absolute;
+    left: 75% !important;
+    top: 2.5rem !important;
+    z-index: 1;
+  }
+  header #in-search {
+    position: absolute;
+    left: 75% !important;
+    top: 2.5rem !important;
+    z-index: 1;
+  }
+  header .search-mobile {
+    width: 100vw;
+    padding-right: 7rem;
+  }
+  header .search-mobile .search-box {
+    width: 20%;
+    margin-left: 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  header .search-mobile .close-search {
+    display: none;
+  }
+  header .search-btn {
+    display: none;
+  }
+  header .search-btn .search-icon {
+    color: #fff;
+  }
+}
+
 #hero-trending .trending-movies {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,6 +325,31 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   -o-transform: translateX(10%);
 }
 
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  .trending-movie-lists img {
+    width: 450px !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .trending-movie-lists .rating .star {
+    position: relative !important;
+    top: -2.5rem !important;
+  }
+  .trending-movie-lists .rating p {
+    font-size: 80%;
+    transform: translateX(5%) !important;
+    -webkit-transform: translateX(5%) !important;
+    -moz-transform: translateX(5%) !important;
+    -ms-transform: translateX(5%) !important;
+    -o-transform: translateX(5%) !important;
+  }
+  .trending-movie-lists img {
+    width: 600px !important;
+    height: 250px !important;
+  }
+}
+
 #popular-movies .popular-now h1 {
   padding: 30px;
   font-weight: bold;
@@ -241,8 +359,22 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   display: -ms-grid;
   display: grid;
   list-style: none;
-  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+  -ms-grid-columns: (minmax(50%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #popular-movies .popular-movies {
+    -ms-grid-columns: (minmax(30%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #popular-movies .popular-movies {
+    -ms-grid-columns: (minmax(20%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  }
 }
 
 #popular-movies .popular-movies a {
@@ -274,8 +406,32 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   font-size: 70%;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #popular-movies .popular-movies li h6 {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #popular-movies .popular-movies li h6 {
+    font-size: 130%;
+  }
+}
+
 #popular-movies .popular-movies li p {
   font-size: 60%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #popular-movies .popular-movies li p {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #popular-movies .popular-movies li p {
+    font-size: 100%;
+  }
 }
 
 #popular-movies .showmore-container {
@@ -312,8 +468,22 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   display: -ms-grid;
   display: grid;
   list-style: none;
-  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+  -ms-grid-columns: (minmax(50%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #action .action-movies {
+    -ms-grid-columns: (minmax(30%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #action .action-movies {
+    -ms-grid-columns: (minmax(20%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  }
 }
 
 #action .action-movies a {
@@ -345,8 +515,32 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   font-size: 70%;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #action .action-movies li h6 {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #action .action-movies li h6 {
+    font-size: 130%;
+  }
+}
+
 #action .action-movies li p {
   font-size: 60%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #action .action-movies li p {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #action .action-movies li p {
+    font-size: 100%;
+  }
 }
 
 #action .showmore-container {
@@ -383,8 +577,22 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   display: -ms-grid;
   display: grid;
   list-style: none;
-  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+  -ms-grid-columns: (minmax(50%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #adventure .adventure-movies {
+    -ms-grid-columns: (minmax(30%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #adventure .adventure-movies {
+    -ms-grid-columns: (minmax(20%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  }
 }
 
 #adventure .adventure-movies a {
@@ -416,8 +624,32 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   font-size: 70%;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #adventure .adventure-movies li h6 {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #adventure .adventure-movies li h6 {
+    font-size: 130%;
+  }
+}
+
 #adventure .adventure-movies li p {
   font-size: 60%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #adventure .adventure-movies li p {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #adventure .adventure-movies li p {
+    font-size: 100%;
+  }
 }
 
 #adventure .showmore-container {
@@ -454,8 +686,22 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   display: -ms-grid;
   display: grid;
   list-style: none;
-  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+  -ms-grid-columns: (minmax(50%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #animation .animation-movies {
+    -ms-grid-columns: (minmax(30%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #animation .animation-movies {
+    -ms-grid-columns: (minmax(20%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  }
 }
 
 #animation .animation-movies a {
@@ -487,8 +733,32 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   font-size: 70%;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #animation .animation-movies li h6 {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #animation .animation-movies li h6 {
+    font-size: 130%;
+  }
+}
+
 #animation .animation-movies li p {
   font-size: 60%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #animation .animation-movies li p {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #animation .animation-movies li p {
+    font-size: 100%;
+  }
 }
 
 #animation .showmore-container {
@@ -525,8 +795,22 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   display: -ms-grid;
   display: grid;
   list-style: none;
-  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+  -ms-grid-columns: (minmax(50%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #crime .crime-movies {
+    -ms-grid-columns: (minmax(30%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #crime .crime-movies {
+    -ms-grid-columns: (minmax(20%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  }
 }
 
 #crime .crime-movies a {
@@ -558,8 +842,32 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   font-size: 70%;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #crime .crime-movies li h6 {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #crime .crime-movies li h6 {
+    font-size: 130%;
+  }
+}
+
 #crime .crime-movies li p {
   font-size: 60%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #crime .crime-movies li p {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #crime .crime-movies li p {
+    font-size: 100%;
+  }
 }
 
 #crime .showmore-container {
@@ -596,8 +904,22 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   display: -ms-grid;
   display: grid;
   list-style: none;
-  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+  -ms-grid-columns: (minmax(50%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #horror .horror-movies {
+    -ms-grid-columns: (minmax(30%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #horror .horror-movies {
+    -ms-grid-columns: (minmax(20%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  }
 }
 
 #horror .horror-movies a {
@@ -629,8 +951,32 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   font-size: 70%;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #horror .horror-movies li h6 {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #horror .horror-movies li h6 {
+    font-size: 130%;
+  }
+}
+
 #horror .horror-movies li p {
   font-size: 60%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #horror .horror-movies li p {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #horror .horror-movies li p {
+    font-size: 100%;
+  }
 }
 
 #horror .showmore-container {
@@ -667,8 +1013,22 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   display: -ms-grid;
   display: grid;
   list-style: none;
-  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+  -ms-grid-columns: (minmax(50%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #mystery .mystery-movies {
+    -ms-grid-columns: (minmax(30%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #mystery .mystery-movies {
+    -ms-grid-columns: (minmax(20%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  }
 }
 
 #mystery .mystery-movies a {
@@ -700,8 +1060,32 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   font-size: 70%;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #mystery .mystery-movies li h6 {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #mystery .mystery-movies li h6 {
+    font-size: 130%;
+  }
+}
+
 #mystery .mystery-movies li p {
   font-size: 60%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #mystery .mystery-movies li p {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #mystery .mystery-movies li p {
+    font-size: 100%;
+  }
 }
 
 #mystery .showmore-container {
@@ -738,9 +1122,23 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   display: -ms-grid;
   display: grid;
   list-style: none;
-  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+  -ms-grid-columns: (minmax(50%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   padding: 6%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #latest .latest-movies {
+    -ms-grid-columns: (minmax(30%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #latest .latest-movies {
+    -ms-grid-columns: (minmax(20%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  }
 }
 
 #latest .latest-movies a {
@@ -779,8 +1177,32 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   font-size: 70%;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #latest .latest-movies li h6 {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #latest .latest-movies li h6 {
+    font-size: 130%;
+  }
+}
+
 #latest .latest-movies li p {
   font-size: 60%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #latest .latest-movies li p {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #latest .latest-movies li p {
+    font-size: 100%;
+  }
 }
 
 #latest .showmore-container {
@@ -818,8 +1240,22 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   display: -ms-grid;
   display: grid;
   list-style: none;
-  -ms-grid-columns: (minmax(31.66%, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr));
+  -ms-grid-columns: (minmax(50%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #search-result .movie-results {
+    -ms-grid-columns: (minmax(30%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #search-result .movie-results {
+    -ms-grid-columns: (minmax(20%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  }
 }
 
 #search-result .movie-results a {
@@ -851,8 +1287,32 @@ header .search-movie-suggestions .movie-sugg a p:last-child {
   font-size: 70%;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #search-result .movie-results li h6 {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #search-result .movie-results li h6 {
+    font-size: 130%;
+  }
+}
+
 #search-result .movie-results li p {
   font-size: 60%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  #search-result .movie-results li p {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #search-result .movie-results li p {
+    font-size: 100%;
+  }
 }
 
 * {
@@ -874,5 +1334,12 @@ html, body {
   font-weight: 300;
   font-size: 18px;
   overflow-x: hidden;
+}
+
+.no-result {
+  position: absolute;
+  left: 33%;
+  top: 50%;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

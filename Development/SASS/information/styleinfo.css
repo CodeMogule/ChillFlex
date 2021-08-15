@@ -83,6 +83,43 @@
   font-size: 90%;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 993px) {
+  .movie-details h1 {
+    font-size: 200% !important;
+  }
+  .movie-details p {
+    font-size: 90% !important;
+  }
+  .genre-container {
+    font-size: 70% !important;
+  }
+  .play-trailer {
+    width: 30% !important;
+  }
+  .add-watchlist {
+    width: 35% !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .movie-details h1 {
+    font-size: 230% !important;
+  }
+  .movie-details p {
+    font-size: 120% !important;
+    width: 55%;
+  }
+  .genre-container {
+    font-size: 80% !important;
+  }
+  .play-trailer {
+    width: 20% !important;
+  }
+  .add-watchlist {
+    width: 25% !important;
+  }
+}
+
 header .sent-back-home {
   padding: 30px;
 }

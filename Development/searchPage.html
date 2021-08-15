@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="./SASS/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <title>Results for: Avengers</title>
+    <title>Search</title>
 </head>
 <body>
     <header class="shadow-lg p-3 mb-5  rounded bg">
@@ -44,18 +44,18 @@
                 <button type="button" class="btn-close btn-close-white close-search" aria-label="Close"></button>
             <input type="search" placeholder="Search" class="search-box" onkeyup="searchDropDown()">
             </div>
-           
-            <div class="search-movie-suggestions">
-                <div class="movie-sugg-genre shadow-lg p-3 mb-5 bg-body rounded">
-                  
-                </div>
-            </div>
+        
         </form>
+        <div class="search-movie-suggestions">
+          <div class="movie-sugg shadow-lg p-3 mb-5 rounded">
+            
+          </div>
+      </div>
        </header>
 
        <section id="search-result">
            <h1 class="search-user">Search Results for: <span>search your ting</span></h1>
-           <h6 style="display: none;">No Results Beoble</h6>
+           <h6 class="no-result">No Results Beoble</h6>
            <div class="search-result-movie">
                <ul class="movie-results">
                 

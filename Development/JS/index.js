@@ -66,5 +66,5 @@ getGenre('showmore-horror',27)
 getGenre('showmore-mystery',9648)
 
 //get movie info
-getMovieDetails()
+getMovieDetails();
 

@@ -22,7 +22,7 @@ export class GetLatestMovies{
            this.getYearOnly = parseFloat(this.arr.replace(/,/g,''))
             const markUp = `
             <li>
-            <a href="" onclick = "getId(${data.id})">
+            <a href="#" onclick = "getId(${data.id})">
          <img src="${this.url}${data.poster_path}" alt="" class="popluar-poster">
          <h6>${data.title}</h6>
          <p>${this.getYearOnly}</p>
